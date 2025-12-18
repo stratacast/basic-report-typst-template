@@ -14,6 +14,7 @@
   compact-mode: false,
   heading-color: blue,
   heading-font: "Ubuntu", // recommended alternatives: "Fira Sans", "Lato", "Source Sans Pro"
+  datetime-fmt: "[day].[month].[year]",
   body,
 ) = {
 
@@ -49,6 +50,7 @@
       heading-font,
       heading-color,
       info-size,
+      datetime-fmt,
     )
   } 
 
@@ -215,6 +217,7 @@
       info-size,                
       body-size,
       label-size,
+      datetime-fmt,
     )
   }
 

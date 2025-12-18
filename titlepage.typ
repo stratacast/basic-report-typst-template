@@ -12,6 +12,7 @@
   heading-font,             // the heading-font is also used for all text on the titlepage
   heading-color,            // heading-color applies as well for the title
   info-size,                // used throughout the document for "info text"
+  datetime-fmt,
 ) = {
 
   // ----- Page-Setup ------------------------
@@ -50,7 +51,7 @@
     bottom + left,
     text(
       font: heading-font, weight: "regular", size: info-size, fill: black,
-      datetime.today().display("[day].[month].[year]") + str("\n") + 
+      datetime.today().display(datetime-fmt) + str("\n") + 
       author + str("\n") + 
       affiliation),
   )
@@ -70,6 +71,7 @@
   info-size,                // used throughout the document for "info text"
   body-size,
   label-size,
+  datetime-fmt,
 ) = {
   stack(
       v(1.5cm - 0.6cm),     // 3.6cm top-margin -0.6cm + 1.5cm = 4.5cm 
